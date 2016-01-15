@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
+
+<title>ES6 Test</title>
+<link href="/css/common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div ng-app="myApp">
+    <ul>
+        <li class="listDivi">
+            <a custom-button>Click me</a>
+        </li>
+        <li class="listDivi">
+            <div ng-controller="MainCtrl">
+                <p>No filter: {{ greeting }}</p>
+                <p>Reverse: {{ greeting | reverse }}</p>
+            </div>
+        </li>
+        <li class="listDivi">
+            <div ng-controller="filter1">
+                <p>Type a few numbers below to watch the filter</p>
+                <input type="text" ng-model="lowerBound" />
+                <ul>
+                    <li ng-repeat="number in numbers | filter:greaterThanNum">
+                        {{ number }}
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="listDivi">
+            <div ng-controller="bothWay1">
+                <input type="text" ng-model="myModel" placeholder="Start typing..." />
+                <p>My model data: {{ myModel }}</p>
+            </div>
+        </li>
+        <li class="listDivi">
+            <div ng-controller="myHttp1">
+                <p>{{ user.username }}</p>
+            </div>
+        </li>
+        <li class="listDivi">
+            <div class="inbox" ng-controller="EmailsCtrl">
+                My Inbox:
+                <ul>
+                    <li ng-repeat="message in emails.messages" class="emailRepeat">
+                        <p>From: {{ message.from }}</p>
+                        <p>Subject: {{ message.subject }}</p>
+                        <p>{{ message.sent | date:'MMM d, y h:mm:ss a' }}</p>
+                        <a ng-click="deleteEmail($index)">Delete email</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="listDivi">
+            <a id="toggleLink" href="" ng-click="toggle = !toggle">Toggle nav</a>
+            <ul ng-show="toggle">
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </li>
+        <li class="listDivi">
+            빈 값.
+        </li>
+        <li class="listDivi">
+            빈 값.
+        </li>
+        <li class="listDivi">
+            빈 값.
+        </li>
+        <li class="listDivi">
+            빈 값.
+        </li>
+        <li class="listDivi">
+            빈 값.
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./js/angular.js"></script>
+<script src="./js/common.js"></script>
+</body>
+</html>

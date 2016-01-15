@@ -1,0 +1,64 @@
+@charset "utf-8";
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;outline:0;}
+html,body{height:100%;}
+body{font:1rem/1.5 Arial, "맑은 고딕", Dotum, "굴림", Gulim, sans-serif;background:#fff;color:#767676;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+table{width:100%;table-layout:fixed;border-spacing:0;border-collapse:collapse;}
+ol,ul,li{list-style:none;}
+caption{position:relative;}
+img,fieldset{border:0 none;}
+label,button{cursor:pointer;}
+button{border:0;background:none;padding:0;}
+:focus{outline:none;}
+button::-moz-focus-inner{padding:0;border:0}/* Firefox Bug Fix */
+em,address{font-style:normal;}
+a:link,a:visited{color:#000;text-decoration:none;}
+a:hover,a:active,a:focus{text-decoration:none;}
+abbr[title],dfn[title]{/*border-bottom:1px dotted;*/cursor:help}
+.clearfix:after{content:"";clear:both;display:block;}
+.hidden, legend{position:absolute;left:-5000px;top:0;visibility:hidden;overflow:hidden;line-height:0.1%;font-size:0.1%;width:0.1%;height:0.1%;}
+
+
+
+/* */
+
+.listDivi:first-child{}
+.listDivi{border-bottom:2px dashed #f0f;padding:50px 0;}
+
+.emailRepeat{
+    padding: 15px;
+    overflow: hidden;
+    background: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+}
+.emailRepeat a{
+    cursor:pointer;
+    color:#f0f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
