@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
+
+<title>ES6 Test</title>
+<link href="/css/common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div ng-app="phonecatApp">
+    <div ng-controller="PhoneListCtrl">
+        <ul>
+            <li ng-repeat="phone in phones">
+                <span>{{phone.name}}</span>
+                <p>{{phone.snippet}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div ng-app="bindExample">
+    <div ng-controller="ExampleController">
+        <label>Enter name: <input type="text" ng-model="name"></label><br>
+        Hello <span ng-bind="name"></span>!
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/angular.js"></script>
+<script src="/js/test1.js"></script>
+</body>
+</html>
