@@ -16,18 +16,20 @@
 (function(){
 	"use strict";
 	
-	
 	// 전역 변수. 
+	var mother= this;
+	
+	// Chart 정의.
 	var Chart = function(ctx){
-		var _this = this;
+		var chart = this;
 		this.canvas = ctx.canvas;
 		
 		this.ctx = ctx;
 		
 		var sizeCalculate = function(element, whatIsThat){
 			if(element['offset'+whatIsThat]){
-				return element['offset'+whatIsThat]
-			};		
+				return element['offset'+whatIsThat];
+			};
 		};
 		
 		var width = this.width = sizeCalculate(ctx.canvas, "Width") || ctx.canvas.width;
@@ -35,17 +37,22 @@
 		this.aspectRatio = this.width / this.height;
 		
 		return this;
-	}
+	};
+	
+	// 기본 옵션.
+	Chart.defaultOption = {
+		// 추후 정의.		
+	};
 	
 	
 	
-	// 원래 여기는 아니지만 일단...
-	var myCanvas = document.getElementById('canvas').getContext('2d');
-	var myChart = new Chart(myCanvas)
 	
 	
 	
-})()
+	// BInding!!
+	mother.Chart = Chart;
+	
+}).call(this);
 
 
 
