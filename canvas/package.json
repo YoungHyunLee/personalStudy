@@ -1,0 +1,10 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "babel --presets es2015 chart/chart -d chart/chartLib"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5"
+  }
+}

@@ -3,29 +3,22 @@
  * 이제 막 시작이라 지금은 저작권따위...후훗
  * 
  * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
  */
-
 
 (function(){
 	"use strict";
 	
 	
+	var mother = this,
+		Chart = mother.Chart;
 	
-	// 실행
-	var ctx = document.getElementById('canvas').getContext('2d');
-	var myChart = new Chart(ctx);
-	myChart.useTypes.bar('data', 'option');
-	
-	console.dir(myChart);
-	
-})();
+	Chart.defaultOption.themes.pinkApple = {
+		
+	}
+
+
+}).call(this);
+
 
 
 
