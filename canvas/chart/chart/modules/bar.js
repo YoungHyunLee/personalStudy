@@ -1,8 +1,11 @@
 /*
+ * numbernoriChart
+ * 숫자놀이의 차트
+ * http://html6.kr
  * 
- * 이제 막 시작이라 지금은 저작권따위...후훗
- * 
- * 
+ * Copyright 2016 Young Hyun Lee
+ * Released under the MIT license
+ * https://github.com/YoungHyunLee/personalStudy/tree/master/canvas/chart
  */
 
 (function () {
@@ -13,17 +16,18 @@
 	    methods = Chart.methods;
 
 	// test
-	Chart.useTypes.bar = function(data, option){
-		
-		
-		this.bar.draw();
-	};
-	
 	
 	var barMethods = {
-		draw: function () {
+		name : 'Bar',
+		defaultOption : Chart.defaultOption,
+		init : function(){
+			this.draw();
+			return this;
+		},
+		draw: function (){
+			
 			console.dir(this);
-			var ctx = Chart.ctx;
+			var ctx = this.chart.ctx;
 
 			ctx.beginPath();
 			ctx.moveTo(20, 20);
@@ -33,6 +37,7 @@
 			ctx.stroke();
 		}
 	};
+	// 이 차트를 정의함.
+	Chart.useType.extend(barMethods);
 	
-	methods.extend(Chart.useTypes.bar, barMethods);
 }).call(this);
