@@ -1,6 +1,5 @@
 //'use strict';
 var myApp = angular.module('myApp', []);
-var yourApp = angular.module('yourApp', []);
 
 myApp.directive('customButton', function () {
     return {
@@ -14,7 +13,6 @@ myApp.directive('customButton', function () {
         */
         link: function (scope, element, attrs) {
             // DOM 조작과 이벤트 설정은 여기서!
-            console.log(1)
         },
         templateUrl: './public/templates/directive1.html'
     };

@@ -12,7 +12,7 @@
 <div ng-app="myApp">
     <ul>
         <li class="listDivi">
-            <a href="#" class="custom-button" ng-click="custom-button">Click me</a>
+            <a custom-button>Click me</a>
         </li>
         <li class="listDivi">
             <div ng-controller="MainCtrl">
@@ -63,13 +63,24 @@
                 <li>Link 3</li>
             </ul>
         </li>
+        <li class="listDivi">
+            빈 값.
+        </li>
+        <li class="listDivi">
+            빈 값.
+        </li>
+        <li class="listDivi">
+            빈 값.
+        </li>
+        <li class="listDivi">
+            빈 값.
+        </li>
+        <li class="listDivi">
+            빈 값.
+        </li>
     </ul>
 </div>
 
-<!-- type2 -->
-<div class="list" ng-app="yourApp">
-
-</div>
 
 
 
@@ -114,5 +125,20 @@
 
 <script src="./js/angular.js"></script>
 <script src="./js/common.js"></script>
+<script src="./js/jquery.min.js"></script>
+
+<SCRIPT>
+	
+	var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  $.getJSON( flickerAPI, {
+    tags: "mount rainier",
+    tagmode: "any",
+    format: "json"
+  })
+    .done(function( data ) {
+      console.log(data)
+    });
+	
+</SCRIPT>
 </body>
 </html>
